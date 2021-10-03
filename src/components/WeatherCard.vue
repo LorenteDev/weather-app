@@ -93,6 +93,7 @@ export default {
                 this.loading.weather = false
               }).catch((error) => {
                 this.makeToast('NOT FOUND', `Couldn't find city '${this.userInfo.city}'`, 'danger')
+                this.loading.weather = false
               })
           }
         })
