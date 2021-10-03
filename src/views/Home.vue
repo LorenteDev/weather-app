@@ -20,20 +20,20 @@ export default {
 </script>
 
 <style scoped>
-  .home {
-    padding-top: 50px;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(194, 222, 240);
-  }
+.home {
+  padding-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(194, 222, 240);
+}
 
-  .home-title {
-    color: black;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+.home-title {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  .card {
-    margin: 0 auto;
-  }
+.card {
+  margin: 0 auto;
+}
 </style>
