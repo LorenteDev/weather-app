@@ -22,6 +22,7 @@ export default {
 <style scoped>
 .home {
   padding-top: 50px;
+  min-height: 700px;
   height: 100vh;
   width: 100vw;
   background-color: rgb(194, 222, 240);
@@ -35,5 +36,16 @@ export default {
 
 .card {
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 610px) {
+  .home {
+    height: 100%;
+    padding-bottom: 75px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
 }
 </style>

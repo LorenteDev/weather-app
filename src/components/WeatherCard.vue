@@ -286,4 +286,42 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (max-width: 610px) {
+  .weather-card {
+    width: 300px;
+    height: 780px;
+  }
+
+  .weather-title {
+    font-size: 20px;
+  }
+
+  .weather-subtitle {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .weather-info {
+    flex-direction: column;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .forecast-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecast-day-container {
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .forecast-day-container:not(:last-child) {
+    border-bottom: 1px solid #ffffff85;
+  }
+}
 </style>
