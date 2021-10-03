@@ -4,7 +4,7 @@
       v-if="!loading.weather && !loading.user"
       class="flex-column">
       <b-form-input v-model="search" @change="updateCity" placeholder="Search a city" />
-      <span class="weather-title">{{ !updated ? `${userInfo.city} , ${userInfo.country}` : userInfo.city }}</span>
+      <span class="weather-title">{{ !updated ? `${userInfo.city}, ${userInfo.country}` : userInfo.city }}</span>
       <div class="weather-info">
         <div class="weather-icon-container">
           <iframe class="weather-icon" :src="weather.image" :alt="weather.description" />
