@@ -145,7 +145,7 @@ export default {
       days = parseInt(days)
       const date = new Date();
       date.setDate(date.getDate() + days);
-      return utils.capitalizeFirstLetter(utils.parseDate(date));
+      return utils.capitalizeFirstLetter(utils.parseDate(date, 'en-us'));
     },
 
     makeToast(title, message, variant) {
