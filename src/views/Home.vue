@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1 class="home-title">The typical Weather App</h1>
+    <WeatherCard class="card"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import WeatherCard from '../components/WeatherCard.vue'
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
-    HelloWorld,
+    WeatherCard
   },
-};
+  data () {
+    return {
+    }
+  }
+}
 </script>
+
+<style scoped>
+  .home {
+    padding-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(194, 222, 240);
+  }
+
+  .home-title {
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+</style>
